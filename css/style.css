@@ -2,8 +2,32 @@
     border: 2px red;
 }
 
-.whythiscolor {
-    /* background-image: ../img/background.jpg; */
-    color: chartreuse;
+/* Color Pallette
+
+body {
+    background-color: #121212;
+
 }
 
+header,
+footer {
+    background-color: #627D9B;
+    color: #D1E5FB;
+} 
+*/
+
+
+
+.container {
+    display: flex;
+    flex: 1 400px;
+    justify-content: space-between;
+}
+
+.title {
+    display: none;
+}
+
+.whythiscolor {
+    color: chartreuse;
+}
