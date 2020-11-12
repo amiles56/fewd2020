@@ -16,7 +16,22 @@ footer {
 } 
 */
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
+main {
+    flex: 1;
+}
+
+i {
+    font-size: 1.6rem;
+}
 
 .container {
     display: flex;
@@ -44,9 +59,10 @@ header {
     display: block;
     color: #ccc;
 }
+
 .nav {
     margin: 0;
-    background: green;
+    background-color: darkslategray;
     position: absolute;
     right: -100%;
     top: 70px;
@@ -68,6 +84,7 @@ header {
 footer {
     background-color: darkslategray;
     color: #ccc;
+    font-size: 1rem;
     
 }
 
