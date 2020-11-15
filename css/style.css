@@ -39,7 +39,7 @@ i {
     justify-content: space-between;
 }
 
-.title {
+header .title {
     display: none;
 }
 
@@ -58,6 +58,7 @@ header {
 .burger {
     display: block;
     color: #ccc;
+    padding: 10px;
 }
 
 .nav {
@@ -80,6 +81,30 @@ header {
 .nav-active {
     right: 0;
 }
+
+/* Directory */
+.directory {
+    background-color: saddlebrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.directory article {
+    flex: 1 0 100px;
+    display: inline-flex;
+    border: 2px black;
+}
+
+.item h2,
+.item h3,
+.item a {
+    display: block
+}
+
+/* Footer */
 
 footer {
     background-color: darkslategray;

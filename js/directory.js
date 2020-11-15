@@ -24,7 +24,7 @@ const items = [{
     Url: 'https://www.gutenberg.org/files/50133/50133-h/50133-h.htm',
     Type: 'Text',
     Genre: 'Horror',
-    Description: '',
+    Description: ' A horror story by H.P. Lovecraft',
     Image: '../img/book',
     Alt: ' Click here to checkout '
 },
@@ -35,9 +35,14 @@ const items = [{
     Type: 'Image',
     Genre: 'Unknown',
     Description: 'a thing',
-    Image: '../img/image',
+    Image: './img/icons8-full-image-100.png',
     Alt: ' Click here to checkout '
 }
-
-
 ];
+
+// Loop that places list items to create the directory. 
+const dirMarkup = `
+${items.map(item => `<article class="item"><h2 class="title">${item.Title}</h2><h3>${item.Artist}</h3><a href=${item.Url} alt="${item.Type}"><img src="${item.Image}" title="${item.Alt}"/></a></article>`).join(' ')}
+`;
+
+document.querySelector('.directory').innerHTML = dirMarkup;
