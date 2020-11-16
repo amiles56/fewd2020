@@ -1,7 +1,7 @@
-const navs = [{
+var navs = [{
         Text: ' Home ',
         Url: 'index.html',
-        Class: ' Home ',
+        Class: ' link-home ',
         Alt: ' Click here to view the home link '
     },
     {
@@ -12,13 +12,13 @@ const navs = [{
     },
     {
         Text: ' Types ',
-        Url: ' types.html',
+        Url: 'index.html?type=text',
         Class: ' link-1 ',
         Alt: ' What kinds of things are in my library? '
     },
     {
         Text: ' Genres ',
-        Url: ' genres.html ',
+        Url: ' index.html?genre=horror',
         Class: ' link-1 ',
         Alt: ' What genres exist in my library? '
     }

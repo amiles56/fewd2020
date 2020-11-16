@@ -35,7 +35,7 @@ i {
 
 .container {
     display: flex;
-    flex: 1 400px;
+    flex: 1 1 0;
     justify-content: space-between;
 }
 
@@ -82,6 +82,12 @@ header {
     right: 0;
 }
 
+a.link-1:-webkit-any-link,
+a.link-home:-webkit-any-link
+ {
+    color: #ccc;
+}
+
 /* Directory */
 .directory {
     background-color: saddlebrown;
@@ -94,7 +100,7 @@ header {
 
 .directory article {
     flex: 1 0 100px;
-    display: inline-flex;
+    flex-wrap: wrap;
     border: 2px black;
 }
 
@@ -121,7 +127,7 @@ footer > .container {
 .sm-links {
     display: flex;
     flex: 1 0 200px;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 200px;
     padding-inline-start: 0;
 }
