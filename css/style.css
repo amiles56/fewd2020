@@ -53,6 +53,10 @@ header {
     color: #ccc;
 }
 
+header h1 a:-webkit-any-link {
+    color: #ccc;
+}
+
 /* nav bar */
 
 .burger {

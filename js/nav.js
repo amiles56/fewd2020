@@ -8,23 +8,25 @@ var navs = [{
         Text: ' How To ',
         Url: ' howto.html ',
         Class: ' link-1',
-        Alt: ' How do I use this library? '
+        Alt: ' How do I use this gallery? '
     },
     {
-        Text: ' Types ',
-        Url: 'index.html?type=text',
+        Text: ' Artists ',
+        Url: 'artists.html',
         Class: ' link-1 ',
-        Alt: ' What kinds of things are in my library? '
+        Alt: ' Who made the things in my gallery? '
     },
     {
         Text: ' Genres ',
-        Url: ' index.html?genre=horror',
+        Url: ' genres.html',
         Class: ' link-1 ',
-        Alt: ' What genres exist in my library? '
+        Alt: ' What genres exist in my gallery? '
     }
 
 
 ];
+
+//?type=text
 
 // Loop that places list items to create the navBar. 
 const navBarMarkup = `
