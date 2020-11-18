@@ -39,8 +39,8 @@ i {
     justify-content: space-between;
 }
 
-header .title {
-    display: none;
+#home-link {
+    padding: .25rem;
 }
 
 ul {
