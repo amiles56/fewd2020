@@ -5,7 +5,7 @@ const items = [{
     Artist: 'Dante Alighieri',
     Genre: 'Fantasy',
     Description: 'The first part of Dantes Divine Comedy',
-    Image: '../img/book',
+    Image: './img/icons8-book-96.png',
     Alt: ' Click here to checkout '
 },
 {
@@ -15,7 +15,7 @@ const items = [{
     Type: 'Music',
     Genre: 'Electroswing',
     Description: 'A fun, poppy electroswing tune',
-    Image: '../img/album',
+    Image: './img/icons8-sound-96.png',
     Alt: ' Click here to checkout '
 },
 {
@@ -25,7 +25,7 @@ const items = [{
     Type: 'Text',
     Genre: 'Horror',
     Description: ' A horror story by H.P. Lovecraft',
-    Image: '../img/book',
+    Image: './img/icons8-book-96.png',
     Alt: ' Click here to checkout '
 },
 {
@@ -35,7 +35,7 @@ const items = [{
     Type: 'Image',
     Genre: 'Unknown',
     Description: 'a thing',
-    Image: './img/icons8-full-image-100.png',
+    Image: './img/icons8-film-reel-96.png',
     Alt: ' Click here to checkout '
 }
 ];

@@ -2,14 +2,22 @@
     .container{
         max-width: 80%;
         margin: 0 auto;
+        flex-direction: row;
     }
     
     .nav {
         display: flex;
-        justify-content: space-around;
-        width: 30%;
+        margin: initial;
+        padding: initial;
+        position: initial;
+        right: initial;
+        top: initial;
+        width: initial;
+        height: initial;
         position: inherit;
+        right: initial;
         flex-direction: row;
+        overflow:initial;
     }
     
     .navlink {
