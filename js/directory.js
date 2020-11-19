@@ -29,18 +29,28 @@ const items = [{
     Alt: ' Click here to checkout '
 },
 {
-    Title: 'Unknown',
-    Artist: 'Unknown',
-    Url: 'index.html',
-    Type: 'Image',
-    Genre: 'Unknown',
+    Title: 'How To Play Magic: the Gathering',
+    Artist: 'Tolarian Community College',
+    Url: 'https://www.youtube.com/watch?v=wif9ppH5JpI',
+    Type: 'Video',
+    Genre: 'Documentary',
     Description: 'a thing',
     Image: './img/icons8-film-reel-96.png',
+    Alt: ' Click here to checkout '
+},
+{    
+    Title: 'Russian Blue Cat on White Textile',
+    Url: 'https://www.pexels.com/photo/bed-bedroom-animal-pet-5503708/',
+    Type: 'Image',
+    Artist: 'T. S.',
+    Genre: 'Portrait',
+    Description: 'Russian Blue Cat on White Textile',
+    Image: './img/icons8-image-96.png',
     Alt: ' Click here to checkout '
 }
 ];
 
-// Loop that places list items to create the directory. 
+// Loop that places article items to create the directory. 
 const dirMarkup = `
 ${items.map(item => `<article class="item"><h2 class="title">${item.Title}</h2><h3>${item.Artist}</h3><a href=${item.Url} alt="${item.Type}"><img src="${item.Image}" title="${item.Alt}"/></a></article>`).join(' ')}
 `;
