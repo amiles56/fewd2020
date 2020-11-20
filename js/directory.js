@@ -38,6 +38,16 @@ const items = [{
     Image: './img/icons8-film-reel-96.png',
     Alt: ' Click here to checkout '
 },
+{
+    Title: 'We&#39;re at Wit&#39;s End',
+    Artist: 'Jules Gaia',
+    Url: 'https://www.epidemicsound.com/track/5vk3RzhRXB',
+    Type: 'Music',
+    Genre: 'Electroswing',
+    Description: 'A jazzy, sexy tune',
+    Image: './img/icons8-sound-96.png',
+    Alt: ' Click here to checkout '
+},
 {    
     Title: 'Russian Blue Cat on White Textile',
     Url: 'https://www.pexels.com/photo/bed-bedroom-animal-pet-5503708/',
@@ -50,9 +60,34 @@ const items = [{
 }
 ];
 
+var disp_items = [];
+
+if (artist) {
+    for (const item of items) {
+        if (artist == item.Artist.toLowerCase().replace(/\s/g,'_').replace(/\./g,'')) {
+            disp_items.push(item);
+        }
+    }
+} else if (genre) {
+    for (const item of items) {
+        console.log(`${item.Genre}`);
+        if (genre == item.Genre.toLowerCase()) {
+            disp_items.push(item);
+        }
+    }
+} else if (type) {
+    for (const item of items) {
+        if (type == item.Type.toLowerCase()) {
+            disp_items.push(item);
+        }
+    }
+} else {
+    disp_items = items;
+}
+
 // Loop that places article items to create the directory. 
 const dirMarkup = `
-${items.map(item => `<article class="item"><h2 class="title">${item.Title}</h2><h3>${item.Artist}</h3><a href=${item.Url} alt="${item.Type}"><img src="${item.Image}" title="${item.Alt}"/></a></article>`).join(' ')}
+${disp_items.map(item => `<article class="item"><h2 class="title">${item.Title}</h2><h3>${item.Artist}</h3><a target="_blank" href=${item.Url} alt="${item.Type}"><img src="${item.Image}" title="${item.Alt}"/></a></article>`).join(' ')}
 `;
 
 document.querySelector('.directory').innerHTML = dirMarkup;
