@@ -26,8 +26,6 @@ var navs = [{
 
 ];
 
-//?type=text
-
 // Loop that places list items to create the navBar. 
 const navBarMarkup = `
 ${navs.map(nav => `<li class="navlink"><a href=${nav.Url} class="${nav.Class}" alt="${nav.Alt}">${nav.Text}</a>`).join(' ')}</li>
