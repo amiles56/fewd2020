@@ -1,5 +1,5 @@
 Front End Web Dev Final Project:
-Delphi's Library
+Delphi's Gallery
 created by Drew Miles
 
 This webpage is a gallery for displaying interesting things you can find around the web.  You can use the "artists" or "genres" pages to limit the things you see in the gallery to things based on that parameter.
